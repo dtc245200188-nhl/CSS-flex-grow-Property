@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.example {
+    margin-bottom: 35px;
+}
+
+.example h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Flex container chứa 5 flex item */
+.container {
+    display: flex;
+    width: 600px;
+    gap: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+/* Mỗi item rộng 80px; phần không gian còn trống trong container
+   sẽ được chia cho các item có flex-grow */
+.container div {
+    box-sizing: border-box;
+    width: 80px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Chỉ div thứ 2 được phép giãn ra để chiếm toàn bộ phần không gian còn trống */
+.container .grow {
+    flex-grow: 1;
+    background-color: lightcoral;
+}

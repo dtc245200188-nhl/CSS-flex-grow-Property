@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex-grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS | flex-grow Property</h1>
+
+    <!-- Đối chiếu: không dùng flex-grow -->
+    <div class="example" id="before">
+        <h2>Không dùng <code>flex-grow</code></h2>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ chính: flex-grow trên div thứ 2 -->
+    <div class="example" id="after">
+        <h2>Div thứ 2 dùng <code>flex-grow: 1</code></h2>
+        <div class="container">
+            <div>1</div>
+            <div class="grow">2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </div>
+</body>
+</html>
